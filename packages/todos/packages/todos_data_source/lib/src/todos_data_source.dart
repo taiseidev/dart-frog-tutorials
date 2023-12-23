@@ -1,11 +1,7 @@
 import 'package:todos_data_source/todos_data_source.dart';
 
 /// An interface for a todos data source.
-/// A todos data source supports basic C.R.U.D operations.
-/// * C - Create
-/// * R - Read
-/// * U - Update
-/// * D - Delete
+/// データソースのインターフェース
 abstract class TodosDataSource {
   /// Create and return the newly created todo.
   Future<Todo> create(Todo todo);

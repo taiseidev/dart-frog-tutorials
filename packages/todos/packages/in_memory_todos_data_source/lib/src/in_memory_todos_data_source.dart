@@ -1,7 +1,8 @@
 import 'package:todos_data_source/todos_data_source.dart';
 import 'package:uuid/uuid.dart';
 
-/// An in-memory implementation of the [TodosDataSource] interface.
+/// TodosDataSourceを継承した実装クラス。
+/// インメモリでデータを管理
 class InMemoryTodosDataSource implements TodosDataSource {
   /// Map of ID -> Todo
   final _cache = <String, Todo>{};
